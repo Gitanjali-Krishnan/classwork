@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Item Name: <input type="text" id="input">
+    <button onclick="a()">Add Item</button>
+     <div id="output">
+
+     </div>
+
+
+    <script>
+      
+      function a()
+      {  
+        var item = [];
+        var data =  document.getElementById("input").value
+        item.push(data);
+        var i = 0;
+        while(i<item.length)
+        {
+            document.getElementById("output").innerHTML += item[i] + "<br>";
+            i++;
+        }
+
+
+
+
+
+      }
+
+
+
+   </script>
+</body>
+</html>

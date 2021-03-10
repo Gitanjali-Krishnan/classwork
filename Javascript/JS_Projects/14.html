@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display">                
+
+
+    </div>
+     
+    <script>
+        
+        
+        
+        
+      var number = parseInt(prompt("Enter a number :"))
+     
+
+      var i = 1;
+      while(i<=10)
+      {   var temp = number * i;
+          //document.write(number.toString() + " x " + i.toString() +" = " + temp.toString());
+          document.getElementById("display").innerHTML += number.toString() + " x " + i.toString() +" = " + temp.toString() + "<br>"
+          i = i+1;
+
+      }
+
+    </script>
+
+
+</body>
+</html>

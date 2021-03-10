@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Student Exchange Program</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        button{
+            background-color: rgb(81, 255, 0);
+            border-radius: 2px;
+            font-size: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+
+        }
+        #rollsheet{
+            border: 1px solid black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            
+        }
+        input{
+            display: block;
+            margin: auto;
+            border: 1px solid aquamarine;
+            margin-top: 5px;
+        }
+        li{
+            text-align: center;
+            font-size: 25px;
+        }
+        div{
+            background-color: rgb(255, 0, 200);
+        }
+        body{
+            background-color: rgb(164, 245, 234);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        Welcome to the Student Exchange Program!
+    </h1>
+   <input placeholder="Roll Number" id="Roll">
+    <input placeholder="Name" id="name">
+    <br>
+    <button onclick="b()">Update Rollsheet</button>
+    <br>
+    <button onclick="a()">View Current Rollsheet</button> 
+<div id="rollsheet">
+    <ol type="1">
+        <li id="1">
+
+        </li>
+
+        <li id="2">
+            
+        </li>
+
+        <li id="3">
+            
+        </li>
+
+        <li id="4">
+            
+        </li>
+
+        <li id="5">
+            
+        </li>
+    </ol>
+</div>
+    <script>
+      
+
+function a(){
+    document.getElementById("1").innerHTML=student[0]
+    document.getElementById("2").innerHTML=student[1]
+    document.getElementById("3").innerHTML=student[2]
+    document.getElementById("4").innerHTML=student[3]
+    document.getElementById("5").innerHTML=student[4]
+}
+function b()
+{
+    var data=document.getElementById("Roll").value
+    var another=document.getElementById("name").value
+    var something=parseInt(data)
+    var index=something-1
+    student[index]=another
+    document.getElementById("Roll").value=""
+    document.getElementById("name").value=""
+}
+
+var student=["Gitanjali","Claire","Nina","Simona","Alexis"]
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Contact Name:
+    <input type="text" id="input">
+    <button onclick="a()">Save</button>
+    <div id="div"></div>
+    <script>
+        var contacts=[]
+
+    function a(){
+        var d=document.getElementById("input").value
+        contacts.push(d)
+        console.log(contacts)
+        document.getElementById("div").innerHTML=contacts
+    }
+
+    </script>
+</body>
+</html>
