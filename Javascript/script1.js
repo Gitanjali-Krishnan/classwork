@@ -376,3 +376,19 @@
 // }
 
 // }
+
+// function a(){
+//     var people=["Nina","Josephine","Eliot","Weis","Gitanjali","Nina","Josephine","Eliot","Weis","Gitanjali","Nina","Josephine","Eliot","Weis","Gitanjali"]
+   
+//     var j = people.length;
+//     for(var i=0; i<j; i++)
+//     {
+//         console.log(people[i]);
+//     }
+// }
+// a()
+
+// function b(name){
+//     console.log(name)
+// }
+// b("II")
