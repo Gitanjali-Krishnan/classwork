@@ -392,3 +392,16 @@
 //     console.log(name)
 // }
 // b("II")
+
+// var car={
+//     color:"red",
+//     speed: 100,
+//     gear: [3,2,4,1]
+// }
+// console.log(car.gear[0])
+
+// console.log(Math.PI)
+// console.log(Math.sqrt(4))
+// console.log(Math.floor(5.6))
+// console.log(Math.ceil(3.2))
+// console.log(Math.round(4.5))

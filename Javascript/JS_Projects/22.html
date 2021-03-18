@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d"></div>
+    <script>
+        var i=1
+        function a(number){
+
+            var sum=0
+            while (number!=0){
+                sum+=(number%10)
+                number=Math.floor(number/10)
+            }
+
+            return sum
+
+
+
+
+        }
+        while (i<=100){
+            document.getElementById("d").innerHTML+=i.toString() + " = " + a(i).toString() + "<br>"
+            i=i+1
+        }
+    </script>
+</body>
+</html>
