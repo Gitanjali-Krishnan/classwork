@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celsius to Farenheit</title>
     <style>
-        h1{
+        #s{
             text-align: center;
         }
         body{
@@ -16,11 +16,16 @@
     </style>
 </head>
 <body>
-    <h1>The first number you entered was Celsius. What came out was Farenheit. </h1>
+    <div id="s"></div>
     <script>
+        function a(Celsius){
+            var f=Celsius*(9/5) +32
+            return f
+        }
         var x
-        x=parseInt(prompt("Enter a number: "))   
-        alert(x * (9/5) +32)
+        x=parseInt(prompt("Enter a number:"))   
+        alert(a(x))
+        document.getElementById("s").innerHTML="<h1>The first number you entered was Celsius. What came out was Farenheit. </h1>" 
     </script>
 </body>
 </html>
