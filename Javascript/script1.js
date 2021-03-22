@@ -405,3 +405,15 @@
 // console.log(Math.floor(5.6))
 // console.log(Math.ceil(3.2))
 // console.log(Math.round(4.5))
+
+// console.log(Math.floor(78.56))
+
+// console.log(Math.abs(3.5))
+
+// console.log(Math.pow(0.5,3))
+// console.log(Math.max(5,7,65,89,3))
+// console.log(Math.min(5,7,65,89,3))
+
+// console.log(Math.random())
+// var a=Math.random()
+// console.log(Math.floor(a*11))
