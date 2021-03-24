@@ -417,3 +417,34 @@
 // console.log(Math.random())
 // var a=Math.random()
 // console.log(Math.floor(a*11))
+// var i =0
+// while(i<10)
+// {
+//    console.log(i);
+//    i++;
+//    break
+//    console.log(45)
+// }
+// console.log("Gitanjali");
+
+// setInterval(function a(){
+//     console.log("Gitanjali")
+// },1000)
+
+// var i =0
+// while(i<10)
+// {
+//    console.log(i);
+//    i++;
+//    if(i==4){
+//        continue
+//    }
+//    console.log(456)
+// }
+// console.log("Gitanjali");
+
+function a(){
+    console.log(4526)
+}
+
+setTimeout(a,10000)
