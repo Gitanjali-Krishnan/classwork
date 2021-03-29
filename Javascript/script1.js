@@ -426,10 +426,14 @@
 //    console.log(45)
 // }
 // console.log("Gitanjali");
-
-// setInterval(function a(){
-//     console.log("Gitanjali")
-// },1000)
+function a(){
+    console.log("Gitanjali")
+    if(1==1)
+    {
+        clearInterval(b);
+    }
+}
+var b = setInterval(a,2000)
 
 // var i =0
 // while(i<10)
@@ -443,8 +447,9 @@
 // }
 // console.log("Gitanjali");
 
-function a(){
-    console.log(4526)
-}
+// function a(){
+//     console.log(4526)
+// }
 
-setTimeout(a,10000)
+// setTimeout(a,10000)
+
