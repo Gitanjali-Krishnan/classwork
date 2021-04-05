@@ -426,14 +426,15 @@
 //    console.log(45)
 // }
 // console.log("Gitanjali");
-function a(){
-    console.log("Gitanjali")
-    if(1==1)
-    {
-        clearInterval(b);
-    }
-}
-var b = setInterval(a,2000)
+
+// function a(){
+//     console.log("Gitanjali")
+//     if(1==1)
+//     {
+//         clearInterval(b);
+//     }
+// }
+// var b = setInterval(a,2000)
 
 // var i =0
 // while(i<10)
@@ -453,3 +454,26 @@ var b = setInterval(a,2000)
 
 // setTimeout(a,10000)
 
+// Math.floor(Math.random()*k) //Gives Random Integers from 0 to k-1
+// Math.floor(Math.random()*(max-min)) + min //Gives Random Integers from min to max-1        
+// Math.floor(Math.random()*(max-min)) + min +1//Gives Random Integers from min to max          
+
+// var a=[1,5,4,7,7,34,8,9,46] 
+// a.sort()
+// console.log(a)
+// a.sort(function(m,n){return m-n}) // This will sort the array in ascending order
+// console.log(a)
+// a.sort(function(m,n){return n-m}) // This will sort the array in descending order
+// console.log(a)
+
+// var Gitanjali={height:121,weight:83,fwriter:"JK Rowling"}
+// var Ayush={height:180,weight:121,fwriter:"Chetan B"}
+// console.log()
+
+var d=new Date();
+console.log(d.getHours())
+console.log(d.getMinutes())
+console.log(d.getMilliseconds())
+console.log(d.getMonth())
+console.log(d.getDay())
+console.log(d.getFullYear())

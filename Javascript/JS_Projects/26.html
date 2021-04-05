@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #div{
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+
+        <h1 id="Q"></h1>
+        <p id="a"></p>
+        <p id="b"></p>
+        <p id="c"></p>
+        <p id="d"></p>
+
+    </div>
+
+    <script>
+        var questions=[{q: "1. Who is the president of the U.S.?", a: "A. Barack Obama", b: "B. Donald Trump", c: "C. Joe Biden", d: "D. Kamala Harris"},{q: "2. Who is the president of India?", a: "A. Narendra Modi", b: "B. Rahul", c: "C. Ram Nath", d: "D. Kamala Harris"}]
+        document.getElementById("Q").innerHTML=questions[1].q
+        document.getElementById("a").innerHTML=questions[1].a
+        document.getElementById("b").innerHTML=questions[1].b
+        document.getElementById("c").innerHTML=questions[1].c
+        document.getElementById("d").innerHTML=questions[1].d
+    </script>
+</body>
+</html>
