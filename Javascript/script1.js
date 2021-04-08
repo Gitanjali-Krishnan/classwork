@@ -470,10 +470,58 @@
 // var Ayush={height:180,weight:121,fwriter:"Chetan B"}
 // console.log()
 
-var d=new Date();
-console.log(d.getHours())
-console.log(d.getMinutes())
-console.log(d.getMilliseconds())
-console.log(d.getMonth())
-console.log(d.getDay())
-console.log(d.getFullYear())
+// var d=new Date();
+// console.log(d.getHours())
+// console.log(d.getMinutes())
+// console.log(d.getMilliseconds())
+// console.log(d.getMonth())
+// console.log(d.getDay())
+// console.log(d.getFullYear())
+
+// function a(){
+//     console.log("Gitanjali")
+// }
+// a()
+
+// function b(a,b){
+//     return a+b
+// }
+// var a=b(3,4)
+// console.log(a)
+
+// sum = ()=>{
+//     console.log("Ayush");
+// }
+// sum()
+
+// a=(k)=>{
+//     if(k%2==0){
+//         console.log("The number is even. ")
+//     }
+//     else{
+//         console.log("The number is odd. ")
+//     }
+// }
+// a(565267625465625)
+
+function binary(k){
+    var s=""
+    while(k!=0){
+        if(k%2==0){
+            s="0"+s
+        }
+        else{s="1"+s}
+        k=Math.floor(k/2)
+    }
+return s;
+}
+var temp = binary(435463);
+var lindex = temp.length - 1;
+if(temp[lindex] =="1")
+{
+     console.log("The number is odd");
+}
+else
+{
+   console.log("The number is even")
+}
