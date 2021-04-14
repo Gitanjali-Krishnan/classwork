@@ -7,7 +7,7 @@
     <title>Books to Read</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Books to Read</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,23 +41,27 @@
       var books = [{
           name: "Wonder",
           image: "https://images-na.ssl-images-amazon.com/images/I/41rBFbAYOeL._SX337_BO1,204,203,200_.jpg",
-          description: "Born with problems that, up until now, have prevented him from going to a mainstream school, Auggie Pullman becomes the most unlikely of heroes when he enters the local fifth grade. As his family, his new classmates, and the larger community all struggle to discover their compassion and acceptance, Auggie's extraordinary journey will unite them and prove you can't blend in when you were born to stand out."
+          description: "Born with problems that, up until now, have prevented him from going to a mainstream school, Auggie Pullman becomes the most unlikely of heroes when he enters the local fifth grade. As his family, his new classmates, and the larger community all struggle to discover their compassion and acceptance, Auggie's extraordinary journey will unite them and prove you can't blend in when you were born to stand out.",
+          link: "https://www.amazon.com/Wonder-R-J-Palacio/dp/0375869026/ref=sr_1_2?dchild=1&keywords=wonder&qid=1618370041&sr=8-2"
+          
+      }, {
+          name: "The Glass Sentence",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51m5Hy661+L._SX319_BO1,204,203,200_.jpg",
+          description: "Sophia Tims comes from a family of explorers and cartologers who, for generations, have been traveling and mapping the New World—a world changed by the Great Disruption of 1799, when all the continents were flung into different time periods. Eight years ago, Sophia's parents left her with her uncle Shadrack, the foremost cartologer in Boston, and went on an urgent mission. They never returned. Then Shadrack is kidnapped. Sophia must search for him with the help of Theo, a refugee from the West. They travel over rough terrain, encounter pirates and traders, and rely on a combination of Shadrack’s maps, common sense, and Sophia's unusual powers of observation. Little do they know that their lives are in as much danger as Shadrack's.",
+          link: "https://www.amazon.com/Glass-Sentence-Mapmakers-Trilogy/dp/0142423661/ref=sr_1_1?crid=HEW80Q9AJPEJ&dchild=1&keywords=the+glass+sentence&qid=1618370119&sprefix=the+glass+se%2Caps%2C220&sr=8-1"
 
       }, {
-          name: "",
-          image: "",
-          description: ""
-
-      }, {
-          name: "",
-          image: "",
-          description: ""
+          name: "The Amulet of Samarkand",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51DGa4T2v2L._SX315_BO1,204,203,200_.jpg",
+          description: "Nathaniel is a young magician's apprentice, taking his first lessons in the arts of magic. But when a devious wizard named Simon Lovelace ruthlessly humiliates Nathaniel in front of everyone he knows, Nathaniel decides to kick up his education a few notches and show Lovelace who's boss. With revenge on his mind, he masters one of the toughest spells of all: summoning the all-powerful djinni, Bartimaeus. But summoning Bartimaeus and controlling him are two different things entirely, and when Nathaniel sends the djinni out to steal the powerful Amulet of Samarkand, Nathaniel finds himself caught up in a whirlwind of trouble. ",
+          link: "https://www.amazon.com/Amulet-Samarkand-Bartimaeus-Trilogy-Book/dp/0786852550/ref=sr_1_1?crid=11K2N0SVYQ20A&dchild=1&keywords=the+amulet+of+samarkand&qid=1618370217&sprefix=the+amulet+%2Caps%2C226&sr=8-1"
 
       }, 
       {
-          name: "",
-          image: "",
-          description: ""
+          name: "By the Great Horn Spoon",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51zxzT52EXL._SX337_BO1,204,203,200_.jpg",
+          description: "When Jack's aunt is forced to sell her beloved mansion but is still unable to raise enough money to pay her debts, the twelve-year-old goes to California in search of gold to help her. Joined by his trusty butler, Praiseworthy, Jack finds adventure and trouble at every turn. Will Jack strike gold in San Francisco or come home empty-handed?",
+          link: "https://www.amazon.com/Great-Horn-Spoon-Sid-Fleischman/dp/0316286125/ref=sr_1_1?crid=5P26VCFXJRBO&dchild=1&keywords=by+the+great+horn+spoon&qid=1618370255&sprefix=By+the+%2Caps%2C241&sr=8-1"
       }
     ]
    
@@ -71,7 +75,7 @@
               <h3 class="mb-0">${books[i].name}</h3>
         
               <p class="card-text mb-auto" >${books[i].description}</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <a href="${books[i].link}" class="stretched-link" >Buy now</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img  src="${books[i].image}" alt="book1">
@@ -80,6 +84,7 @@
           </div>
         </div>`
 
+        console.log(document.getElementById("list").innerHTML)
         }
 
 
