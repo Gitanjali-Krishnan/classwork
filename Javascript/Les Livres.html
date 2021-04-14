@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Les Livres Pour Lire</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Les Livres Pour Lire</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+            </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="row mb-2" id="list">
+     
+     
+          
+
+      </div>
+  
+    <script>
+      var books = [{
+          name: "Un Tueur à Ma Porte",
+          image: "https://images-na.ssl-images-amazon.com/images/I/41zpds13iCL._SX343_BO1,204,203,200_.jpg",
+          description: "Daniel s'est brûlé les yeux lors d'un séjour aux sports d'hiver. Quelques jours après son retour, il est réveillé en pleine nuit par un cri et des râles venant de la rue. Y aurait-il un blessé ? Daniel se précipite à la fenêtre mais il ne voit rien. L'assassin, lui, l'a très bien vu. Et il n'a pas l'intention de laisser un témoin aussi gênant lui échapper...",
+          link: "https://www.amazon.com/tueur-%C3%A0-ma-porte/dp/2747083489/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1618443208&sr=8-1"
+          
+      }, {
+          name: "James et la Grosse Pêche",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51kQriJvScL._SX346_BO1,204,203,200_.jpg",
+          description: "La pêche se mit à grossir et grossir. Et grossir et grossir et encore GROSSIR.James Henry Trotter vit avec deux affreuses sorcières. Tante Éponge est énorme, et son visage semble avoir bouilli. Tante Piquette est osseuse et pointue.James se sent seul jusqu'à ce qu'il se passe quelque chose d'inhabituel. Au bout du jardin, une pêche se met à grossir et grossir et GROSSIR. À l'intérieur vivent sept insectes très spéciaux qui n'attendent que James pour une aventure magique !Mais où iront-ils dans leur grosse pêche, et que va-t-il se passer si les horribles tantes se mettent en travers de leur route ? Il n'y a qu'une seule façon de la savoir.",
+          link: "https://www.amazon.com/James-et-la-grosse-peche/dp/2070601617/ref=sr_1_1?dchild=1&keywords=James+et+la+grosse+peche&qid=1618443306&sr=8-1"
+
+      }, {
+          name: "Le Bibliobus: Le XIXe siècle",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51jZrC81BaL._SX348_BO1,204,203,200_.jpg",
+          description: "Ce livre vous emmène au XIXe siècle où vous apprenez tout sur lui.",
+          link: "https://www.amazon.com/XIXe-si%C3%A8cle-CM-Cycle/dp/2011174511/ref=sr_1_6?dchild=1&keywords=Le+bibliobus&qid=1618443468&sr=8-6"
+
+      }, 
+      {
+          name: "Mystères Dans les Highlands",
+          image: "https://images-na.ssl-images-amazon.com/images/I/51k5DG1W0uL._SX370_BO1,204,203,200_.jpg",
+          description: "Il y a beaucoup de mystères dans ce roman passionnant. ",
+          link: "https://www.amazon.com/Mysteres-Highlands-Premiers-Frissons-Ecosse/dp/2368360654/ref=sr_1_1?dchild=1&keywords=Mysteres+dans+les+Highlands&qid=1618444043&sr=8-1"
+      }
+    ]
+   
+
+        for(let i=0; i<books.length; i++)
+        {
+                      document.getElementById("list").innerHTML +=  `  <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+           
+              <h3 class="mb-0">${books[i].name}</h3>
+        
+              <p class="card-text mb-auto" >${books[i].description}</p>
+              <a href="${books[i].link}" class="stretched-link" >Acheter maintenant</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  src="${books[i].image}" alt="book1">
+    
+            </div>
+          </div>
+        </div>`
+
+        console.log(document.getElementById("list").innerHTML)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
