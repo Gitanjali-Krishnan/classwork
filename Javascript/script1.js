@@ -504,24 +504,33 @@
 // }
 // a(565267625465625)
 
-function binary(k){
-    var s=""
-    while(k!=0){
-        if(k%2==0){
-            s="0"+s
-        }
-        else{s="1"+s}
-        k=Math.floor(k/2)
-    }
-return s;
-}
-var temp = binary(435463);
-var lindex = temp.length - 1;
-if(temp[lindex] =="1")
-{
-     console.log("The number is odd");
-}
-else
-{
-   console.log("The number is even")
-}
+// function binary(k){
+//     var s=""
+//     while(k!=0){
+//         if(k%2==0){
+//             s="0"+s
+//         }
+//         else{s="1"+s}
+//         k=Math.floor(k/2)
+//     }
+// return s;
+// }
+// var temp = binary(435463);
+// var lindex = temp.length - 1;
+// if(temp[lindex] =="1")
+// {
+//      console.log("The number is odd");
+// }
+// else
+// {
+//    console.log("The number is even")
+// }
+
+// template litirals
+
+// var a="Gitanjali"
+// var b=10
+// console.log(`My name is ${a} and I am ${b} years old. `)
+
+var a={b:"Gitanjali",c:10,d:[5,4,6]}
+console.log(a.d[2])

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Books to Read</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Books to Read</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+            </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="row mb-2" id="list">
+     
+     
+          
+
+      </div>
+  
+    <script>
+      var books = [{
+          name: "Wonder",
+          image: "https://images-na.ssl-images-amazon.com/images/I/41rBFbAYOeL._SX337_BO1,204,203,200_.jpg",
+          description: "Born with problems that, up until now, have prevented him from going to a mainstream school, Auggie Pullman becomes the most unlikely of heroes when he enters the local fifth grade. As his family, his new classmates, and the larger community all struggle to discover their compassion and acceptance, Auggie's extraordinary journey will unite them and prove you can't blend in when you were born to stand out."
+
+      }, {
+          name: "",
+          image: "",
+          description: ""
+
+      }, {
+          name: "",
+          image: "",
+          description: ""
+
+      }, 
+      {
+          name: "",
+          image: "",
+          description: ""
+      }
+    ]
+   
+
+        for(let i=0; i<books.length; i++)
+        {
+                      document.getElementById("list").innerHTML +=  `  <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+           
+              <h3 class="mb-0">${books[i].name}</h3>
+        
+              <p class="card-text mb-auto" >${books[i].description}</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img  src="${books[i].image}" alt="book1">
+    
+            </div>
+          </div>
+        </div>`
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
