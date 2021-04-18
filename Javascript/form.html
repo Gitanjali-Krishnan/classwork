@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/988776c307.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgb(93, 200, 219);
+            text-align: center;
+        }
+        form{
+            background-color: rgb(59, 59, 59);
+            color: white;
+            width: 900px;
+            margin-left: 15%;
+            padding: 5%;;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        input{
+            width: 100%;
+            margin-top: 20px;
+            text-align: left;
+            margin-right: 0px;
+        }
+        button{
+            background-color: rgb(32, 133, 32);
+            width: 100%;
+            color: white;
+            height: 40px;
+            margin-top: 10px;
+            border: 0px;
+        }
+        select{
+            width: 100%;
+        }
+        span{
+            text-align: left;
+        }
+        .small{
+            width: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <i><b>Thank you for taking the time to help us improve the platform </b></i>
+    <form>
+    <p>Name</p>
+    <input type="text">
+    <p>Email</p>
+    <input type="text">
+    <p>Age(optional)</p>
+    <input type="text">
+    <p>Which option best describes your current role?</p>
+        <select name="qualification">
+              <option>a.student</option>
+        </select>
+    <p>Would you recommend this application to a friend?</p>
+    <input type="radio" name="recommend" class="small"><span>Definately</span><br>
+    <input type="radio" name="recommend" class="small"><span>Maybe</span><br>
+    <input type="radio" name="recommend" class="small"><span>Not Sure</span><br>
+    <p>What is your favorite feature of the application?</p>
+    <select name="qualification">
+        <option>Projects</option>
+        <option>Live Sessions</option>
+        <option>Practice Problems</option>
+  </select>
+    <p>What would you like to see improved?(check all that apply)</p>
+    <input type="checkbox" class="small"><span>Projects</span><br>
+    <input type="checkbox" class="small"><span>Mentorship</span><br>
+    <input type="checkbox" class="small"><span>Live Sessions</span><br>
+    <input type="checkbox" class="small"><span>Practice Problems</span><br>
+    <input type="checkbox" class="small"><span>Support</span><br>
+    <input type="checkbox" class="small"><span>Videos</span><br>
+    <input type="checkbox" class="small"><span>Recordings</span><br>
+    <p>Any Comments or Suggestions?</p>
+    <input type="text">
+    <button>Submit</button>
+    </form>
+</body>
+</html>

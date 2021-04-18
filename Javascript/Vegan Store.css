@@ -1,0 +1,327 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 8px 8px 15px lightgray;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+header img{
+    height: 45px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+}
+header ul button{
+    color: white;
+    background-color: rgb(170,210,54);
+    border-radius: 5px;
+    border: none;
+    width: 140px;
+    height: 30px;
+}
+.dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    top: 15px;
+    border-top: 2px solid rgb(170,210,54);
+    box-shadow: 8px 8px 15px lightgray;
+    width: 140px;
+    right: 0px;
+}
+li:hover .dropdown{
+    display: block;
+}
+header ul li{
+    position: relative;
+}
+.dropdown li{
+    border-bottom: solid 1px rgb(148, 142, 142);
+    padding: 4px;
+}
+#sec1{
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+#sec1 h1{
+    letter-spacing: 10px;
+    font-size: 45px;
+}
+#sec1 p{
+    color: gray;
+}
+#sec2{
+    display: flex;
+}
+#sec2 div{
+    color: white;
+    height: 75vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+}
+#sec2 .div1{
+    background-color: rgb(101,205,166);
+}
+#sec2 .div2{
+    background-color: rgb(145,172,65);
+}
+#sec2 .div3{
+    background-color: rgb(228,180,118);
+}
+#sec2 .div4{
+    background-color: rgb(239,155,173);
+}
+#sec2 .fas{
+    font-size: 95px;
+}
+#sec2 div p{
+    width: 80%;
+    text-align: center;
+}
+#sec2 div:hover i{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+#sec3{
+    text-align: center;
+    background-color: rgb(247,238,226);
+}
+#sec3>h1{
+    font-size: 45px;
+}
+#sec3 p{
+    color: gray;
+}
+.container{
+    display: flex;
+}
+.container div{
+    width: 25%;
+}
+.container div:hover i{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.container div i{
+    color: white;
+    background-color: rgb(227,179,117);
+    font-size: 65px;
+    padding: 35px;
+    border-radius: 50%;
+}
+.container div h1{
+    font-size: 30px;
+}
+.font{
+    font-family: 'Caveat', cursive; 
+    font-size: 25px;
+    color: rgb(145,172,65);
+    margin: 0px;
+    text-align: center;
+}
+#sec4{
+    text-align: center;
+    padding-bottom: 80px;
+}
+#sec4 p{
+    color: gray;
+}
+#sec4 .container2 img{
+    border-radius: 50%;
+    height: 75px;
+}
+#sec4 .container2 div{
+    background-color: rgb(245,246,251);
+    border: none;
+    width: 28%;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 45px;
+    border-top-right-radius: 0px;
+}
+#sec4 .container2 div:hover{
+    box-shadow: 5px 5px 18px lightgray,-5px -5px 18px lightgray;
+}
+#sec4 .container2{
+    display: flex;
+    justify-content: space-around;
+}
+#sec5 .hello{
+    width: 66%;
+    background-image: url(https://mobirise.com/extensions/organicamp/assets/images/19.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+#sec5 .hi{
+    background-size: cover;
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    width: 34%;
+    height: 80vh;
+    padding: 100px;
+    box-sizing: border-box;
+}
+#sec5{
+    display: flex;
+}
+#sec5 h1{
+    font-size: 45px;
+}
+#sec5 p{
+    color: #8b8b99;
+}
+#sec5 .input{
+    border: none;
+    border-radius: 4px;
+    height: 35px;
+    width: 300px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+#sec5 .hi button{
+    color: white;
+    background-color: rgb(246,157,173);
+    border: 1px solid rgb(246,157,173);
+    border-radius: 4px;
+    width: 155px;
+    height: 50px;
+    margin-top: 20px;
+}
+#sec5 .hi button:hover{
+    background-color: transparent;
+    color: rgb(246,157,173);
+}
+#sec6{
+    background-color: rgb(246,252,250);
+    display: flex;
+    height: 45vh;
+}
+#sec6 div{
+    width: 25%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#sec6 div h1{
+    text-align: center;
+    font-size: 45px;
+}
+#sec6 div p{
+    text-align: center;
+    color: rgb(90,227,182);
+}
+#sec7 .yay{
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+}
+#sec7 h3{
+    width: 100px;
+    border-bottom: 1px solid rgb(228,180,118);
+}
+#sec7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sec7 iframe{
+    width: 80%;
+    height: 70vh;
+}
+#sec8 .yay{
+    color: rgb(170,210,54);
+    font-family: 'Caveat', cursive;
+}
+#sec8 .wow{
+    font-size: 40px;
+}
+#sec8 p{
+    color: rgb(148, 142, 142);
+    font-size: 18px;
+}
+#sec8 input{
+    border: 1px solid rgb(229,230,236);
+    width: 90%;
+    border-radius: 4px;
+    height: 45px;
+    margin: 8px;
+}
+#sec8{
+    display: flex;
+}
+#sec8 div{
+    width: 50%;
+}
+#sec8 .great button{
+    color: white;
+    background-color: rgb(170,210,54);
+    border: none;
+    margin: 8px;
+    border-radius: 3px;
+    padding: 8px;
+    width: 170px;
+}
+@media screen and (max-width:600px){
+    header ul li{
+        display: none;
+    }
+    #sec1 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    #sec1 p{
+        text-align: center;
+    }
+    #sec2{
+        flex-wrap: wrap;
+    }
+    #sec2 div{
+        width: 100%;
+    }
+    #sec3 .container{
+        flex-wrap: wrap;
+    }
+    #sec3 .container div{
+        width: 100%;
+    }
+    #sec3>h1{
+        text-align: center;
+    }
+    #sec3 div h1{
+        text-align: center;
+    }
+    #sec3 div p{
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+    }
+    #sec4 .container2{
+        flex-wrap: wrap;
+    }
+    #sec4 .container2 div{
+        width: 80%;
+        margin: 30px 0px;
+    }
+}
+Vegan Store.css
+Displaying Vegan Store.css.
