@@ -11,40 +11,66 @@ body{
 }
 
 .div.rotate {
-    height: 100px;
-    width: 120px;
-    margin: 100px;
+    margin: 60px;
     display: inline-block;
     position: relative;
-    border-radius: 25px;
     background-color: rgb(101,106,207);
     transform: rotate(30deg);
 }
 .div-1{
-    animation: move 5s infinite;
-    
+    animation: move 8s infinite;
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
 }
 .div-2{
-    animation: move 6s infinite; 
+    animation: move 9s infinite; 
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
 }
 .div-3{
-    animation: move 5s infinite; 
+    animation: move 7s infinite; 
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
 }
 .div-4{
-    animation: move 4s infinite; 
+    animation: move 7s infinite; 
+    height: 150px;
+    width: 150px;
+    border-radius: 35px;
 }
 .div-5{
-    animation: move 6s infinite; 
+    animation: move 9s infinite; 
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
 }
 .div-6{
-    animation: move 6s infinite; 
+    animation: move 9s infinite; 
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+}
+.div-7{
+    animation: move 8s infinite; 
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+}
+.div-8{
+    animation: move 8s infinite; 
+    height: 150px;
+    width: 150px;
+    border-radius: 35px;
 }
 @keyframes move{
     0%{
-        bottom: -425%;
+        bottom: -400%;
     }
     100%{
-        bottom: 800%;
+        bottom: 1300%;
         transform: rotate(350deg);
     }
 }

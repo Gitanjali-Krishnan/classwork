@@ -532,5 +532,5 @@
 // var b=10
 // console.log(`My name is ${a} and I am ${b} years old. `)
 
-var a={b:"Gitanjali",c:10,d:[5,4,6]}
-console.log(a.d[2])
+// var a={b:"Gitanjali",c:10,d:[5,4,6]}
+// console.log(a.d[2])
