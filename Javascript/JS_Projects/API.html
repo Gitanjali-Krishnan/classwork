@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user_input = prompt("Enter the city name: ");
+        var url="http://api.openweathermap.org/data/2.5/weather?q="  +user_input+"&appid=caab4856703835874c28182367630513"
+        fetch(url).then((response)=>{
+            return response.json()
+
+        }).then((s)=>{
+            var latitude = s.coord.lat;
+            var longitude = s.coord.lon;
+            alert(`Latitude : ${latitude} Longitude: ${longitude}`);
+             
+        })
+    </script>
+</body>
+</html>

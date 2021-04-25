@@ -534,3 +534,25 @@
 
 // var a={b:"Gitanjali",c:10,d:[5,4,6]}
 // console.log(a.d[2])
+
+//JSON
+
+// var a={fname:"Gitanjali",lname:"Krishnan"}
+// var b = JSON.stringify(a);
+
+// console.log(b.fname);
+
+// var c = JSON.parse(b);
+
+// console.log(b)
+// console.log(c);
+
+// console.log(typeof(b));
+
+// var a={s:"something",n:3542}
+// var b=JSON.stringify(a);
+
+// var c=JSON.parse(b)
+
+// console.log(c)
+
