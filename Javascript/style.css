@@ -1,0 +1,19 @@
+button{
+    background-color: rgb(64, 255, 47);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+body{
+    text-align: center;
+    background-color: lavender;
+}
+.button{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 50px;
+}
+img{
+    width: 240px;
+    height: 200px;
+}

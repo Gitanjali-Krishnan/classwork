@@ -1,0 +1,39 @@
+.img{
+    height: 250px;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.s{
+    margin-left: 150px;
+}
+.img2{
+    height: 250px;
+    width: 250px;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+.y{
+    margin-left: 50px;
+}
+.navbar{
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+}
+.div{
+    display: flex;
+}
+.img3{
+    height: 250px;
+    width: 250px;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+.img4{
+    height: 250px;
+    width: 250px;
+    margin-left: 55px;
+    margin-top: 50px;
+}
