@@ -9,7 +9,7 @@
 <body>
     <script>
         var user_input = prompt("Enter the city name: ");
-        var url="http://api.openweathermap.org/data/2.5/weather?q="  +user_input+"&appid=caab4856703835874c28182367630513"
+        var url="http://api.openweathermap.org/data/2.5/weather?q="  +user_input+"&appid=6335ab3930970f405e5bed398895a08c"
         fetch(url).then((response)=>{
             return response.json()
 
@@ -22,3 +22,7 @@
     </script>
 </body>
 </html>
+
+fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=caab4856703835874c2818236763051').then(function(response){
+    console.log(response)
+})

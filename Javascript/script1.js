@@ -556,3 +556,18 @@
 
 // console.log(c)
 
+// console.log("Ayush")
+fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=6335ab3930970f405e5bed398895a08c').then(function(response){
+   return response.json();
+}).then((resp)=>{
+    console.log(resp)
+})
+
+
+// async function a()
+// {
+//           var response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=6335ab3930970f405e5bed398895a08c');
+//           var final_response = await response.json()
+//           console.log(final_response);
+// }
+// a()
