@@ -557,12 +557,11 @@
 // console.log(c)
 
 // console.log("Ayush")
-fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=6335ab3930970f405e5bed398895a08c').then(function(response){
-   return response.json();
-}).then((resp)=>{
-    console.log(resp)
-})
-
+// fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=6335ab3930970f405e5bed398895a08c').then(function(response){
+//    return response.json();
+// }).then((resp)=>{
+//     console.log(resp)
+// })
 
 // async function a()
 // {
@@ -571,3 +570,6 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=6335ab393097
 //           console.log(final_response);
 // }
 // a()
+
+var a="5*2+6/3"
+console.log(eval(a))
