@@ -17,7 +17,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             </ul>
             <form class="d-flex">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="b()">
                 Find city weather
               </button>
             </form>
@@ -26,7 +26,7 @@
       </nav>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content" id="w">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">City information</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -34,12 +34,12 @@
         <div class="modal-body">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">City name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="city" aria-describedby="emailHelp">
               </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Find weather</button>
+          <button type="button" class="btn btn-primary" onclick="a()" id="finding">Find weather</button>
         </div>
       </div>
     </div>
@@ -71,5 +71,51 @@
     </button>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script>
+      function a(){
+        var city=document.getElementById("city").value
+        var url=`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6335ab3930970f405e5bed398895a08c`
+        fetch(url).then(function (response){return response.json()}).then(function (res){console.log(res)
+          document.getElementById("w").innerHTML=`
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">City information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+          <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Position</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" value="${res.coord.lat}, ${res.coord.lon}">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Max Temperature</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" value="${res.main.temp_max} K">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Min Temperature</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" value="${res.main.temp_min} K">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"> Wind  Speed</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" value="${res.wind.speed} mph">
+              </div>
+          `
+         })
+      }
+      function b(){
+        document.getElementById("w").innerHTML=`<div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">City information</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">City name</label>
+                <input type="email" class="form-control" id="city" aria-describedby="emailHelp">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="a()" id="finding">Find weather</button>
+        </div>`
+      }
+    </script>
   </body>
 </html>
