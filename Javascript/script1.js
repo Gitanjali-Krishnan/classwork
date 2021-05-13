@@ -571,5 +571,33 @@
 // }
 // a()
 
-var a="5*2+6/3"
-console.log(eval(a))
+// var a="5*2+6/3"
+// console.log(eval(a))
+
+// var a="Hi"
+// function b(){
+//     a=a+"Hello"
+// }
+// console.log(a)
+// b()
+// console.log(a)
+
+// function a(x){
+//     console.log(x)
+// }
+
+
+// function print(a)
+// {
+//     console.log(a);
+// }
+
+// print("Ayush")
+// print("geetanji")
+// print("Codingzen")
+
+function a(G,H){
+    console.log("Hello, "+G+", how are you? How is the wheather in "+H+"?")
+}
+
+a("Georgia","California")
