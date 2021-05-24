@@ -1,109 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        #main{
-            height: 620px;
-            width: 400px;
-            background-color: silver;
-            margin: auto;
-            margin-top: 40px;
-            border-radius: 20px;
-            box-shadow: 10px 10px 10px 5px gray;
-            padding: 20px;
-        }
-        #display{
-            background-color: rgb(31, 141, 31);
-            height: 80px;
-            width: 95%;
-            margin: auto;
-            border-radius: 15px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 32px;
-            padding: 10px;
-            text-align: right;
-        }
-        .button{
-            font-family: 'Source Sans Pro', sans-serif;
-            height: 70px;
-            width: 27%;
-            margin: 10px;
-            font-size: 28px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 5px gray;
-            border: none;
-        }
-        #buttons{
-            margin-top: 10px;
-        }
-        .reset{
-            margin: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border-radius: 50%;
-            font-size: 20px;
-            background-color: orange;
-            color: white;
-            margin-top: 12px;
-        }
+      #main {
+        height: 620px;
+        width: 400px;
+        background-color: silver;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px 5px gray;
+        padding: 20px;
+      }
+      #display {
+        background-color: rgb(31, 141, 31);
+        height: 80px;
+        width: 95%;
+        margin: auto;
+        border-radius: 15px;
+        font-family: "Roboto Mono", monospace;
+        font-size: 32px;
+        padding: 10px;
+        text-align: right;
+      }
+      .button {
+        font-family: "Source Sans Pro", sans-serif;
+        height: 70px;
+        width: 27%;
+        margin: 10px;
+        font-size: 28px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px gray;
+        border: none;
+      }
+      #buttons {
+        margin-top: 10px;
+      }
+      .reset {
+        margin: 10px;
+        font-family: "Source Sans Pro", sans-serif;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: orange;
+        color: white;
+        margin-top: 12px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main">
-        <div id="display"></div>
-        <button class="reset" onclick="reset()">AC</button>
-        <div id="buttons">
+      <div id="display"></div>
+      <button class="reset" onclick="reset()">AC</button>
+      <div id="buttons">
         <button class="button" value="1" onclick="a(value)">1</button>
         <button class="button" value="2" onclick="a(value)">2</button>
         <button class="button" value="3" onclick="a(value)">3</button>
-        <br>
+        <br />
         <button class="button" value="4" onclick="a(value)">4</button>
         <button class="button" value="5" onclick="a(value)">5</button>
         <button class="button" value="6" onclick="a(value)">6</button>
-        <br>
+        <br />
         <button class="button" value="7" onclick="a(value)">7</button>
         <button class="button" value="8" onclick="a(value)">8</button>
         <button class="button" value="9" onclick="a(value)">9</button>
-        <br>
+        <br />
         <button class="button" value="+" onclick="a(value)">+</button>
         <button class="button" value="0" onclick="a(value)">0</button>
         <button class="button" value="-" onclick="a(value)">-</button>
-        <br>
+        <br />
         <button class="button" value="*" onclick="a(value)">×</button>
         <button class="button" value="/" onclick="a(value)">÷</button>
         <button class="button" onclick="calculate()">=</button>
-        </div>
+      </div>
     </div>
     <script>
-        var expression=""
-        function a(value){
-            if(expression.length>=19){
-                alert("Out of range, please refresh")
-                setTimeout(function(){
-                    window.location.href = "http://127.0.0.1:5500/Javascript/JS_Projects/33.html";
-                }, 2000)
-            }
-            expression=expression+value
-            document.getElementById("display").innerHTML=expression
-            console.log(expression);
+      var expression = "";
+      function a(value) {
+        if (expression.length >= 19) {
+          alert("Out of range, please refresh");
+          setTimeout(function () {
+            window.location.href =
+              "http://127.0.0.1:5500/Javascript/JS_Projects/33.html";
+          }, 2000);
         }
-        function calculate(){
-            var result = eval(expression)
-            document.getElementById("display").innerHTML = result;
-            expression = ""
-        }
-        function reset()
-        {
-            document.getElementById("display").innerHTML = "";
-            expression = "";
-        }
+        expression = expression + value;
+        document.getElementById("display").innerHTML = expression;
+        console.log(expression);
+      }
+      function calculate() {
+        var result = eval(expression);
+        document.getElementById("display").innerHTML = result;
+        expression = "";
+      }
+      function reset() {
+        document.getElementById("display").innerHTML = "";
+        expression = "";
+      }
     </script>
-</body>
+  </body>
 </html>

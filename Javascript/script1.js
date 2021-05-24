@@ -596,8 +596,82 @@
 // print("geetanji")
 // print("Codingzen")
 
-function a(G,H){
-    console.log("Hello, "+G+", how are you? How is the wheather in "+H+"?")
-}
+// function a(G,H){
+//     console.log("Hello, "+G+", how are you? How is the wheather in "+H+"?")
+// }
 
-a("Georgia","California")
+// a("Georgia","California")
+
+// var h="Hello"
+// function a(){
+//     var g="Gitanjali"
+//     console.log(g)
+//     h=5
+// }
+// a()
+// console.log(h)
+
+// var fname="Gitanjali"
+// function a(){
+//     fname= fname.toUpperCase();
+// }
+// a()
+// console.log(fname)
+
+// const password = "Ayush"
+
+// function change()
+// {
+//    console.log(password)
+// }
+
+// change()
+
+// function a()
+// {
+//     console.log("a")
+// return 5;
+// }
+//  var b = 5
+
+// function a(){
+//     console.log(7)
+//     return 7
+// }
+// var k = 7
+// console.log(k)
+// var a = "Ayush"
+// console.log(a)
+// function lol()
+// {
+//     var b = "Geetanjali"
+// console.log(b)
+// }
+// lol()
+// var c = "Varun"
+// console.log(c)
+// lol()
+
+// function a(){
+//     return 5
+// }
+// var k=a()
+// console.log(k)
+
+// function b(d,a){
+//     console.log(a)
+//     if(d%2==0) {
+//         return "Even"
+//     }
+//     else{
+//         return "Odd"
+//     }
+// }
+// var i=b(5657,56746)
+// console.log(i)
+
+// function a(m,n){
+//     var i=1
+//     var j=1
+//     while()
+// }
