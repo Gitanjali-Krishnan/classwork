@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         #div{
             background-color: rgb(242,243,247);
             margin: auto;
-            height: 625px;
+            height: 685px;
             width: 800px;
         }
         body{
@@ -18,6 +20,7 @@
         #division{
             text-align: center;
             color: rgb(126,99,99);
+            font-family: 'Roboto', sans-serif;
         }
         .name{
             width: 250px;
@@ -42,26 +45,58 @@
             width: 25px;
             margin-left: 90px;
         }
+        .h3{
+            display: inline;
+        }
+        #id{
+            color: white;
+            background-color: rgb(77,165,77);
+            border: none;
+            height: 64px;
+            display: inline-block;
+            width: 625px;
+            margin-left: 85px;
+            margin-top: 20px;
+            font-size: 20px; 
+        }
     </style>
 </head>
 <body>
     <div id="div">
         <div id="division">
             <h1>------------------------  Register  ------------------------</h1>
-            <p>Create your account. It's free and only takes a minute. </p>
+            <h3>Create your account. It's free and only takes a minute. </h3>
             <div>
                 <input type="text" class="name" placeholder="First Name">
                 <input type="text" class="name" placeholder="Last Name">
             </div>
             <div>
-                <input type="text" class="information" placeholder="Email">
+                <input type="text" class="information" placeholder="Email" id="email">
                 <br>
                 <input type="text" class="information" placeholder="Password">
                 <br>
                 <input type="text" class="information" placeholder="Confirm Password">
             </div>
         </div>
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" checked ></input>
+        <h3 class="h3">I accept the Terms of Use & Privacy Policy. </h3>
+        <br>
+        <button id="id" onclick="a()">Register Now</button>
     </div>
+
+    <script>
+       
+        function a(){
+            var email = document.getElementById("email").value;
+            if ((email.search("@")==-1) || email.indexOf(".")==-1){
+                alert("Not a valid email")
+            }
+            var isChecked = document.getElementById("check").checked;
+            if(isChecked==false)
+            {
+                alert("Please accecpt terms")
+            }
+        }
+    </script>
 </body>
 </html>
