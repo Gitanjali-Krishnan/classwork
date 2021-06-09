@@ -3,5 +3,14 @@
 210,200,240,270,300
 300,330,360
 
-Convert into radian
-Use canvas to write the letters B, C, D, E
+1. Convert into radian
+2. Use canvas to write the letters B, C, D, E
+
+1. 
+    30=pi/6
+    60=pi/3
+    90=pi/2
+    120=2*pi/3
+    150=5*pi/6
+    180=pi
+    210=7*pi/6
