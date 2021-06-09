@@ -8,7 +8,11 @@
 function draw(){
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.arc(20,20,5,0,2*Math.PI)
+    ctx.arc(150,75,25,0,2*Math.PI)
+    ctx.stroke()
+    ctx.arc(50,35,25,0,2*Math.PI)
+    ctx.stroke()
+    ctx.arc(270,45,25,0,2*Math.PI)
     ctx.stroke()
 }
 window.onload=draw()

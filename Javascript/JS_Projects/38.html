@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="250" height="150" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas2" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas3" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas4" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas5" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
+
+    <script>
+        function draw(){
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(10,150)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(30,150)
+        ctx.stroke()
+        ctx.moveTo(15,125)
+        ctx.lineTo(25,125)
+        ctx.stroke()
+}
+window.onload=draw()
+
+        function draw2(){
+        var c = document.getElementById("Canvas2");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(50,125)
+        ctx.lineTo(19,125)
+        ctx.stroke()
+        ctx.moveTo(50,100)
+        ctx.lineTo(50,300)
+        ctx.stroke()
+        ctx.moveTo(20,150)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+}
+window.onload=draw2()
+
+        function draw3(){
+        var c = document.getElementById("Canvas3");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,150)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+}
+window.onload=draw3()
+
+        function draw4(){
+        var c = document.getElementById("Canvas4");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,150)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+        ctx.moveTo(50,100)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+}
+window.onload=draw4()
+
+        function draw5(){
+        var c = document.getElementById("Canvas5");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,124)
+        ctx.lineTo(50,124)
+        ctx.stroke()
+        ctx.moveTo(20,150)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+}
+window.onload=draw5()
+    </script>
+</body>
+</html>
