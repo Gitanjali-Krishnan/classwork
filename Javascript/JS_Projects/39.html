@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="month" id="month" min="1" max="12">
+    <input type="number" placeholder="day" id="day" min="1" max="31">
+    <button onclick="find()">Find</button>
+    <script>
+        function find(){
+            var month=document.getElementById("month").value
+            var day=document.getElementById("day").value
+            var url="http://history.muffinlabs.com/date/"+month+"/"+day
+            var check=[{days:31,month:1},{days:29,month:2},{days:31,month:3},{days:30,month:4},{days:31,month:5},{days:30,month:6},{days:31,month:7},{days:31,month:8},{days:30,month:9},{days:31,month:10},{days:30,month:11},{days:31,month:12}]
+
+            if(check[month-1].days>=day){
+                fetch(url).then(function (response){return response.json()}).then(function (res){console.log(res.data.Events[1])
+
+
+                })
+            }
+            else{
+                alert("Enter the correct date")
+            }
+        }
+    </script>
+</body>
+</html>

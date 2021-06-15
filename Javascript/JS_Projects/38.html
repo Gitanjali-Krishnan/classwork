@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas id="myCanvas" width="250" height="150" style="border:1px solid #d3d3d3;"></canvas>
-    <canvas id="Canvas2" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
-    <canvas id="Canvas3" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
-    <canvas id="Canvas4" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
-    <canvas id="Canvas5" width="250" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas1" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas2" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas3" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas4" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas5" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas6" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
+    <canvas id="Canvas7" width="100" height="151" style="border:1px solid #d3d3d3;"></canvas>
 
     <script>
-        function draw(){
-        var c = document.getElementById("myCanvas");
+        function draw1(){
+        var c = document.getElementById("Canvas1");
         var ctx = c.getContext("2d");
         ctx.moveTo(20,100)
         ctx.lineTo(10,150)
@@ -27,7 +29,7 @@
         ctx.lineTo(25,125)
         ctx.stroke()
 }
-window.onload=draw()
+window.onload=draw1()
 
         function draw2(){
         var c = document.getElementById("Canvas2");
@@ -83,7 +85,7 @@ window.onload=draw3()
 }
 window.onload=draw4()
 
-        function draw5(){
+       function draw5(){
         var c = document.getElementById("Canvas5");
         var ctx = c.getContext("2d");
         ctx.moveTo(20,100)
@@ -99,7 +101,43 @@ window.onload=draw4()
         ctx.lineTo(50,150)
         ctx.stroke()
 }
-window.onload=draw5()
+window.onload=draw5() 
+
+        function draw6(){
+        var c = document.getElementById("Canvas6");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,124)
+        ctx.lineTo(50,124)
+        ctx.stroke()
+}
+window.onload=draw6() 
+
+        function draw7(){
+        var c = document.getElementById("Canvas7");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(20,100)
+        ctx.lineTo(50,100)
+        ctx.stroke()
+        ctx.moveTo(20,100)
+        ctx.lineTo(20,150)
+        ctx.stroke()
+        ctx.moveTo(20,150)
+        ctx.lineTo(50,150)
+        ctx.stroke()
+        ctx.moveTo(50,150)
+        ctx.lineTo(50,125)
+        ctx.stroke()
+        ctx.moveTo(50,125)
+        ctx.lineTo(30,125)
+        ctx.stroke()
+}
+window.onload=draw7()
     </script>
 </body>
 </html>

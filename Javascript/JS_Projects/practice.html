@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <script>
+            function rectangle(){
+                var c=document.getElementById("canvas")
+                var ctx=c.getContext("2d")
+                ctx.rect(10,110,20,120)
+                ctx.stroke()
+                ctx.beginPath()
+                ctx.fillRect(20,100,30,110)
+                ctx.stroke()
+            }
+            rectangle()
+
+            // function text(){
+            //     var c=document.getElementById("canvas")
+            //     var ctx=c.getContext("2d")
+            //     ctx.font="20px Arial"
+            //     ctx.fillText("I am using canvas",50,100)
+            // }
+            // text()
+        </script>
+</body>
+</html>

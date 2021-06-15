@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="150">Sorry Canvas is not supported in your device</canvas>
+    <script>
+//         function circle(){
+//             var c = document.getElementById("canvas");
+//             var ctx = c.getContext("2d");
+//             ctx.lineWidth = "6";
+//             ctx.strokeStyle = "cyan";
+//             ctx.rect(5, 5, 290, 140);
+//             ctx.stroke();
+//         }
+// window.onload=circle()
+
+            function text(){
+                var c=document.getElementById("canvas")
+                var ctx=c.getContext("2d")
+                ctx.font="30px Arial"
+                ctx.fillText("Hello",20,100)
+            }
+            window.onload=text()
+    </script>
+</body>
+</html>
