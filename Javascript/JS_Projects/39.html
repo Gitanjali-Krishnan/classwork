@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        h1{
+            display: inline;
+        }
     </style>
 </head>
 <body>
     <input type="number" placeholder="month" id="month" min="1" max="12">
     <input type="number" placeholder="day" id="day" min="1" max="31">
     <button onclick="find()">Find</button>
+    <br>
+    <br>
+    <div id="display"></div>
     <script>
         function find(){
             var month=document.getElementById("month").value
@@ -21,10 +26,28 @@
             var check=[{days:31,month:1},{days:29,month:2},{days:31,month:3},{days:30,month:4},{days:31,month:5},{days:30,month:6},{days:31,month:7},{days:31,month:8},{days:30,month:9},{days:31,month:10},{days:30,month:11},{days:31,month:12}]
 
             if(check[month-1].days>=day){
-                fetch(url).then(function (response){return response.json()}).then(function (res){console.log(res.data.Events[1])
+              
+                       fetch(url).then(function(response){
+                           return response.json()
+                       }).then(function(final_response){
+
+                                                 for(let i=0; i<final_response.data.Events.length; i++)
+                                                 {
+                                                    document.getElementById("display").innerHTML += `<h1>${final_response.data.Events[i].year}</h1>: <h1> ${final_response.data.Events[i].text} </h1> <br><br><br>`
+                                                 }
 
 
-                })
+                                 var final_response ={data: {
+                                     Events: [{year: 2020, text: "Corona Virus Attack"}, {year: 2010, text: "Gitanjali Born"}];
+                                 }}
+ 
+
+
+                                  
+                                
+                       })
+
+               
             }
             else{
                 alert("Enter the correct date")
