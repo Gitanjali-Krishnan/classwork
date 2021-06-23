@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <link href="book logo.jpg" rel="icon">
+    <title>Facts</title>
     <style>
         h1{
             display: inline;
         }
+        .hello{
+            background-color: rgb(30, 173, 255);
+            color: floralwhite;
+            border: 1px solid floralwhite;
+            box-shadow: 5px 5px grey ;
+            font-family: 'Benne', serif;
+        }
+        #cool{
+            margin-left: 42%;
+            margin-top: 10px;
+            padding: 1px;
+            display: inline-block;
+        }
+        input{
+            height: 35px;
+            width: 130px;
+            border-radius: 5px;
+            border: none;
+        }
+        button{
+            background-color: azure;
+            border: 1px solid azure;
+            border-radius: 5px;
+        }
+        body{
+            background-color: rgb(231, 231, 231);
+        }
+        .img{
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <input type="number" placeholder="month" id="month" min="1" max="12">
-    <input type="number" placeholder="day" id="day" min="1" max="31">
-    <button onclick="find()">Find</button>
+    <img src="book logo.jpg" class="img">
+    <div id="cool">
+        <input type="number" placeholder="month" id="month" min="1" max="12">
+        <input type="number" placeholder="day" id="day" min="1" max="31">
+        <button onclick="find()">Find</button>
+    </div>
     <br>
     <br>
     <div id="display"></div>
     <script>
         function find(){
+            document.getElementById("display").innerHTML=""
             var month=document.getElementById("month").value
             var day=document.getElementById("day").value
             var url="http://history.muffinlabs.com/date/"+month+"/"+day
@@ -33,12 +73,12 @@
 
                                                  for(let i=0; i<final_response.data.Events.length; i++)
                                                  {
-                                                    document.getElementById("display").innerHTML += `<h1>${final_response.data.Events[i].year}</h1>: <h1> ${final_response.data.Events[i].text} </h1> <br><br><br>`
+                                                    document.getElementById("display").innerHTML += `<div class="hello"><h1><b><i><u>${final_response.data.Events[i].year}</u></i></b></h1>: <h1> ${final_response.data.Events[i].text} </h1> <br><br><br></div>`
                                                  }
 
 
                                  var final_response ={data: {
-                                     Events: [{year: 2020, text: "Corona Virus Attack"}, {year: 2010, text: "Gitanjali Born"}];
+                                     Events: [{year: 2020, text: "Corona Virus Attack"}, {year: 2010, text: "Gitanjali Born"}]
                                  }}
  
 
