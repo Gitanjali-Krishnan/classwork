@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        button{
+            height: 25px;
+            width: 50px;
+            color: white;
+            background-color: orange;
+            border: 1px solid orange;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" style="border: 2px solid black;"></canvas>
+    <br>
+    <button onclick="erase()">Erase</button>
+    <script>
+        function a(){
+            var canvas=document.getElementById("canvas")
+            canvas.height=window.innerHeight
+            canvas.width=window.innerWidth
+        }
+        var context = document.getElementById("canvas").getContext('2d');
+        
+        window.addEventListener("resize",a)
+        var paint=false
+        function startDraw(){
+            paint=true
+        }
+        function endDraw(){
+            paint=false
+        }
+        function draw(event){
+           if(!paint) return;
+           context.lineTo(event.clientX, event.clientY);
+           context.stroke()
+
+        }
+        document.getElementById("canvas").addEventListener("mousedown",startDraw)
+        document.getElementById("canvas").addEventListener("mouseup",endDraw)
+        document.getElementById("canvas").addEventListener("mousemove", draw);
+
+        function erase(){
+            window.location.href=
+              "http://127.0.0.1:5500/Javascript/JS_Projects/42.html";
+        }
+    </script>
+</body>
+</html>
