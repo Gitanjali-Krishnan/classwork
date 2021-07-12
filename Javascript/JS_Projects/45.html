@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <script>
+        navigator.geolocation.getCurrentPosition(function(location){
+            var lat=location.coords.latitude.toString()
+            var long=location.coords.longitude.toString()
+            var url="https://www.google.com/maps/embed/v1/view?key=AIzaSyBhDt92uqvcOP7HEXnfG2BObjzm4ZLtXzM&center="+lat+","+long+"&zoom=18&maptype=satellite"
+            document.getElementById("div").innerHTML='<iframe width="800" height="500" frameborder="0" style="border:0" src="' + url +'" allowfullscreen></iframe>'
+        })
+    </script>
+</body>
+</html>
