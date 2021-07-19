@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="Music logo.png" rel="icon">
+    <title>Music</title>
     <style>
         #player{
             height: 680px;
@@ -30,7 +32,6 @@
         }
        
     </style>
-    <title>Document</title>
 </head>
 <body>
     <div id="player" style="padding-top: 25px;">
@@ -43,7 +44,7 @@
     <audio src="song2.mp3" controls id="audio" style="display: none;"></audio>
   
     <script>
-        var images=["music1.webp","music2.jpg","music3.jpg"]
+        var images=["music1.webp","music2.jpg","music3.jpg","music4.jfif"]
         var player = false;
         function start(){
             document.getElementById("audio").play()
@@ -57,10 +58,10 @@
             document.getElementById("lol").style.display="inline-block"
             document.getElementById("image").classList.remove("rotate")
         }
-        var songs = ["song2.mp3","song.mp3", "song3.mp3" ];
+        var songs = ["song2.mp3","song.mp3", "song3.mp3","song4.mp3" ];
         var i = 0;
         function next(){
-             i =(i+1)%3;
+             i =(i+1)%4;
             document.getElementById("audio").src= songs[i];
             document.getElementById("image").src=images[i]
             start()
