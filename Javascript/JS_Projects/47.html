@@ -34,16 +34,16 @@
 </head>
 <body>
     <div id="player" style="padding-top: 25px;">
-            <img src="music2.gif" style="height: 300px; width: 300px; margin: auto; display: block; border-radius: 50%;" id="image" class="linear infinite">
+            <img src="music1.webp" style="height: 300px; width: 300px; margin: auto; display: block; border-radius: 50%;" id="image" class="linear infinite">
             <img src="previous.png" style="margin-top: 230px; display: inline-block; width: 20%;margin-left: 95px;" onclick="pre()">
             <img src="play.png" style="margin-top: 230px; display: inline-block; width: 20%;" onclick="start()"  id="lol">
             <img src="pause.png" style="margin-top: 230px; display: none; width: 20%;" onclick="pause()"  id="lol1">
             <img src="next.png"  style="margin-top: 230px; display: inline-block; width: 20%;" onclick="next()">
     </div>
-    <audio src="song1.mp3" controls id="audio" style="display: none;"></audio>
+    <audio src="song2.mp3" controls id="audio" style="display: none;"></audio>
   
     <script>
-        var images=["music2.gif","music2.jpg","music3.jpg"]
+        var images=["music1.webp","music2.jpg","music3.jpg"]
         var player = false;
         function start(){
             document.getElementById("audio").play()
@@ -57,7 +57,7 @@
             document.getElementById("lol").style.display="inline-block"
             document.getElementById("image").classList.remove("rotate")
         }
-        var songs = ["song1.mp3","song2.mp3", "song3.mp3" ];
+        var songs = ["song2.mp3","song.mp3", "song3.mp3" ];
         var i = 0;
         function next(){
              i =(i+1)%3;
