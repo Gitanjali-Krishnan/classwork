@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #player{
+            height: 680px;
+            width: 500px;
+            display: block;
+            margin: auto;
+            background-color: cadetblue;
+            border-radius: 25px;
+            box-shadow: 15px 15px 15px grey;
+        }
+        .rotate{
+            animation: rotation 3s;
+        }
+        .linear{
+            animation-timing-function: linear;
+        }
+        .infinite{
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotation{
+            from{transform:rotate(0deg);}
+            to{transform:rotate(359deg)}
+        }
+       
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="player" style="padding-top: 25px;">
+            <img src="music2.gif" style="height: 300px; width: 300px; margin: auto; display: block; border-radius: 50%;" id="image" class="linear infinite">
+            <img src="previous.png" style="margin-top: 230px; display: inline-block; width: 20%;margin-left: 95px;" onclick="pre()">
+            <img src="play.png" style="margin-top: 230px; display: inline-block; width: 20%;" onclick="start()"  id="lol">
+            <img src="pause.png" style="margin-top: 230px; display: none; width: 20%;" onclick="pause()"  id="lol1">
+            <img src="next.png"  style="margin-top: 230px; display: inline-block; width: 20%;" onclick="next()">
+    </div>
+    <audio src="song1.mp3" controls id="audio" style="display: none;"></audio>
+  
+    <script>
+        var images=["music2.gif","music2.jpg","music3.jpg"]
+        var player = false;
+        function start(){
+            document.getElementById("audio").play()
+            document.getElementById("lol").style.display="none"
+            document.getElementById("lol1").style.display="inline-block"
+            document.getElementById("image").classList.add("rotate")
+        }
+        function pause(){
+            document.getElementById("audio").pause()
+            document.getElementById("lol1").style.display="none"
+            document.getElementById("lol").style.display="inline-block"
+            document.getElementById("image").classList.remove("rotate")
+        }
+        var songs = ["song1.mp3","song2.mp3", "song3.mp3" ];
+        var i = 0;
+        function next(){
+             i =(i+1)%3;
+            document.getElementById("audio").src= songs[i];
+            document.getElementById("image").src=images[i]
+            start()
+        }
+        function pre(){
+            if(i>0)
+            {
+                            i--;
+                            document.getElementById("audio").src = songs[i];
+                            document.getElementById("image").src=images[i]
+                            start()
+            }
+        }
+    </script>
+</body>
+</html>

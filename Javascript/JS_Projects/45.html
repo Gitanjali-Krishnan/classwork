@@ -12,7 +12,7 @@
         navigator.geolocation.getCurrentPosition(function(location){
             var lat=location.coords.latitude.toString()
             var long=location.coords.longitude.toString()
-            var url="https://www.google.com/maps/embed/v1/view?key=AIzaSyBhDt92uqvcOP7HEXnfG2BObjzm4ZLtXzM&center="+lat+","+long+"&zoom=18&maptype=satellite"
+            var url="https://www.google.com/maps/embed/v1/view?key=AIzaSyBhDt92uqvcOP7HEXnfG2BObjzm4ZLtXzM&center="+lat+","+long+"&zoom=20&maptype=satellite"
             document.getElementById("div").innerHTML='<iframe width="800" height="500" frameborder="0" style="border:0" src="' + url +'" allowfullscreen></iframe>'
         })
     </script>
